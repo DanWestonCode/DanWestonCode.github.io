@@ -10937,7 +10937,7 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.portfolio .portfolio-item .portfolio-item-caption {
+.portfolio .portfolio-item .portfolio-item-caption, .portfolio .portfolio-item .portfolio-item-caption-secondary {
   position: absolute;
   top: 0;
   left: 0;
@@ -10945,11 +10945,14 @@ html {
   opacity: 0;
   background-color: rgba(25, 129, 124, 0.9);
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+.portfolio .portfolio-item .portfolio-item-caption:hover, .portfolio .portfolio-item .portfolio-item-caption-secondary:hover {
   opacity: 1;
 }
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content, .portfolio .portfolio-item .portfolio-item-caption-secondary .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+.portfolio .portfolio-item .portfolio-item-caption-secondary {
+  background-color: rgba(44, 62, 80, 0.9);
 }
 
 .portfolio-modal .btn-close {

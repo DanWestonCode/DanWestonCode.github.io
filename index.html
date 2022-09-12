@@ -28,7 +28,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                    <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#workbench">Workbench</a></li> -->
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#workbench">Workbench</a></li>
                 </ul>
             </div>
         </div>
@@ -109,7 +109,7 @@
     </section>
 
     <!-- Workbench Section-->
-    <!-- <section class="page-section bg-primary portfolio text-white" id="workbench">
+    <section class="page-section bg-primary portfolio text-white" id="workbench">
         <div class="container">
             <h2 class="page-section-heading text-right">Workbench</h2>
             <div class="divider-custom divider-light">
@@ -117,24 +117,24 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalTinHearts">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><p>GPGPU Fluid Simulation</p><p>Direct X, C++</p></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalVolumeRenderer">
+                        <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Volume Renderer</p><p>C++, HLSL, DirectX 11</p></div>
                         </div>
-                        <img class="img-fluid" src="assets/fluid.png" alt="..." />
+                        <img class="img-fluid" src="assets/volume-renderer.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalTinHearts">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><p>Rebel Inc. Escalation</p><p>Programmer</p></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalFlowMap">
+                        <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Flow Maps</p><p>TypeScript, WebGL, GLSL</p></div>
                         </div>
-                        <img class="img-fluid" src="assets/rebel-inc-escalation.png" alt="..." />
+                        <img class="img-fluid" src="assets/flow.png" alt="..." />
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- socials -->
     <section class="page-section socials-menu bg-secondary text-white mb-0" id="socials">
@@ -424,6 +424,89 @@
             </div>
         </div>
     </div>
+
+     <!-- Portfolio Modal volume renderer.-->
+     <div class="portfolio-modal modal fade" id="portfolioModalVolumeRenderer" tabindex="-1" aria-labelledby="portfolioModalVolumeRenderer" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Volume Renderer</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="iframe-container">
+                                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Ip8kWzZrJbM"></iframe>
+                                </div>  
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4"></p>Source Code can be found on my GitHub <a href="https://github.com/DanWestonCode/volume-rendering">here</a></p>
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Volume Renderer implemented with C++/DirectX 11. This renders scalar data without the use of fitting proper geometry to the data. The technique works by rendering a cube. The front and back faces of the cube are rendered to separate Render Textures. A Pixel shader is then used to iterate through the scalar data, casting a ray from the front render texture to the back. The scalar data is sampled at equal intervals along the way. Each sample accumulates a result which is rendered onto the cube.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>C++, HLSL, DirectX 11</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal flow map.-->
+    <div class="portfolio-modal modal fade" id="portfolioModalFlowMap" tabindex="-1" aria-labelledby="portfolioModalFlowMap" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Flow Maps</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div id="stage-flow" class="d-flex justify-content-center">
+                                    <!-- Portfolio Modal - Image-->
+                                    <script src="flowmaps/js/app.js"></script>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4"></p>Source Code can be found on my GitHub <a href="https://github.com/DanWestonCode/flow-map">here</a></p>
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">This tech demo illustrates the use of Flow Maps within a shader to mimic directional water flow. The demo
+                                    is written in TypeScript and rendered in WebGL using Pixi. This technique uses a hand painted normal map
+                                    to depict directional vectors. Normals are unrolled and integrated with a timestep to move them in their
+                                    painted direction. The outcome of the integrated normal is used to sample the water texture and give the
+                                    illusion of flow.
+                                    <br><br>As well as water flow, this technique can be used for multiple effects including lava, weather patterns
+                                    and traffic!              
+                                    <br><br>I mainly wrote this demo to familiarise myself writing, loading and working with shaders using Pixi and
+                                    WebGL. The implementation is based off of <a href="http://graphicsrunner.blogspot.com/2010/08/water-using-flow-maps.html">Kyle Haywards article.</a>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>TypeScript, WebGL, GLSL</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
