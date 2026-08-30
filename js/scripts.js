@@ -39,6 +39,10 @@ window.addEventListener('DOMContentLoaded', event => {
             portfolioModals[index].addEventListener('hidden.bs.modal', function () {
                 //  Remove from container, this stops the video...
                 videoContainer.src = '';
+            });
+
+            // Remove the YouTube iframe completely
+            portfolioModals[index].addEventListener('show.bs.modal', function () {
                 //  Add it back in so when someone comes back to watch the cool stuff, it's there again....
                 videoContainer.src = portfolioVideoSrc[myIndex];
             });
