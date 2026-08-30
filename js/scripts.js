@@ -3,7 +3,6 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -18,8 +17,39 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
+    var autoStopVideos = function () {
+        //  Grab all my portfolio modals...
+        const portfolioModals = document.querySelectorAll('[id^="portfolioModal"]');
+        //  Cache for all the iframe video src
+        var portfolioVideoSrc = [];
+        
+        var videoIndex = 0;
+        for(let index = 0; index < portfolioModals.length; index++)
+        {
+            //  Grab the iframe in the modal 
+            const videoContainer = portfolioModals[index].querySelector('iframe');
+            //  No video here, all good, carry on
+            if (!videoContainer) continue;
+
+            //  Cache the video src so we can auto-stop the video.
+            portfolioVideoSrc[videoIndex] = videoContainer.src;
+
+            let myIndex = videoIndex++;
+            // Remove the YouTube iframe completely
+            portfolioModals[index].addEventListener('hidden.bs.modal', function () {
+                //  Remove from container, this stops the video...
+                videoContainer.src = '';
+                //  Add it back in so when someone comes back to watch the cool stuff, it's there again....
+                videoContainer.src = portfolioVideoSrc[myIndex];
+            });
+        }
+    };
+
     // Shrink the navbar 
     navbarShrink();
+
+    //  Add handling to stop all videos in portfolio modules
+    autoStopVideos();
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
@@ -45,5 +75,5 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
+
