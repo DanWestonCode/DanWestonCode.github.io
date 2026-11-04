@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Weston</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap 5.2.0-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Daniel Weston</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#workbench">Workbench</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- About me Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container" style="padding-top: 80px;">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-right text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="ms-auto"><p class="lead">Hi, I’m Dan, a Senior Programmer who’s been working in industry for 10 years. I have professional experience with Unity/C# and hands-on experience with Unreal Engine 5/C++ and Blueprints. I am currently working at Auroch Digital on “Warhammer Survivors", a cross platform survivor/roguelite coming out soon. I have worked on 7 shipped titles across PC, Console, Mobile and VR.</p></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-right text-secondary">Titles</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">              
+                <!-- Tin Hearts -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalTinHearts">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Tin Hearts</p><p>Senior Programmer</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/tin-hearts.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Rebel Inc. Escalation-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalRebelIncEscalation">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Rebel Inc. Escalation</p><p>Programmer</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/rebel-inc-escalation.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Plague Inc.-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalPlagueInc">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Plague Inc.</p><p>Programmer</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/plague-inc.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Rebel Inc.-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalRebelInc">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Rebel Inc.</p><p>Programmer</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/rebel-inc.png" alt="..." />
+                    </div>
+                </div>
+                <!-- SCM-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioSCM">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Scenario Creator Mobile</p><p>Programmer</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/scm.png" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workbench Section-->
+    <section class="page-section bg-primary portfolio text-white" id="workbench">
+        <div class="container">
+            <h2 class="page-section-heading text-right">Workbench</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <a href="https://github.com/DanWestonCode/Mesh-Painter" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Mesh Painter</p><p>C#, HLSL, Unity, URP, Render Graph</p></div>
+                            </div>
+                            <img class="img-fluid" src="assets/mesh-painter.png" alt="..." />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <a href="https://github.com/DanWestonCode/wall-hugger" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Wall Hug - UActorComponent</p><p>C++, Unreal Engine 5, Character Controller</p></div>
+                            </div>
+                            <img class="img-fluid" src="assets/ue_wallhug_mecahnic.png" alt="..." />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <a href="https://github.com/DanWestonCode/glowing-outlines" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Glowing Outlines</p><p>C#, HLSL Unity, URP, Render Graph</p></div>
+                            </div>
+                            <img class="img-fluid" src="assets/glowing-outlines.png" alt="..." />
+                        </div>
+                    </a>
+                </div>            
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalVolumeRenderer">
+                        <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Volume Renderer</p><p>C++, HLSL, DirectX 11</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/volume-renderer.png" alt="..." />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalFlowMap">
+                        <div class="portfolio-item-caption-secondary d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><p>Flow Maps</p><p>TypeScript, WebGL, GLSL</p></div>
+                        </div>
+                        <img class="img-fluid" src="assets/flow.png" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- socials -->
+    <section class="page-section socials-menu bg-secondary text-white mb-0" id="socials">
+        <ul id="menu-standard">
+            <li id="social-li" class="fab fa-github" onclick="location.href='https://github.com/DanWestonCode';">
+            </li>
+            <li id="social-li" class="fab fa-linkedin"
+                onclick="location.href='https://www.linkedin.com/in/danielwjweston/';"></li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- Portfolio Modal Tin Hearts-->
+    <div class="portfolio-modal modal fade" id="portfolioModalTinHearts" tabindex="-1" aria-labelledby="portfolioModalTinHearts" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Tin Hearts</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="iframe-container">
+                                    <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/73Khf3Aed6c"></iframe>
+                                </div>                                
+                                <!-- Portfolio Modal - Text-->
+                                <p class="fw-bold">About:</p>
+                                <p class="text-left">Tin Hearts is a narrative based puzzle adventure game. The game is available across Steam, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series, PC VR and Meta Quest 2.</p>
+                                <p class="text-left">I was a Senior Programmer on this project.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>Unity, C#, URP, HLSL</p>
+                                <p class="fw-bold">Key roles and responsibilities:</p>
+                                <div class="container">
+                                    <li>Collaborating with Technical Artists to implement and adapt shaders and Scriptable Render Features to support both standard rendering and VR. </li>
+                                    <li>Implementation of in game effects such as the “Ghost effect” on characters.</li>
+                                    <li>Physics based deterministic pathing system with Quad Tree path invalidation system.</li>
+                                    <li>Platform support for Steam, Xbox One and PlayStation 4.</li>
+                                    <li>Editor Tools for Game Designers and Artist</li>
+                                    <li>Game Input system using Rewired and dynamic gamepad Glyph system for images and text.</li>
+                                    <li>Mentoring and working collaboratively with the code team.</li>
+                                    <li>Participating in Code Reviews.</li>
+                                    <div></div>
+                                    <p>&nbsp</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal Rebel Inc. Escalation-->
+    <div class="portfolio-modal modal fade" id="portfolioModalRebelIncEscalation" tabindex="-1" aria-labelledby="portfolioModalRebelIncEscalation" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Rebel Inc. Escalation</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="iframe-container">
+                                    <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/L-Zwh1dRauA"></iframe>
+                                </div>
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Rebel Inc.Escalation is a PC port of the mobile game ‘Rebel Inc.’, a political/military simulation strategy game. The game is  available on Steam. I was a programmer on this project, working on it from its inception up to release and post launch content.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>Unity, C#, Python, HLSL</p>
+                                <p class="fw-bold">Key roles and responsibilities:</p>
+                                <div class="container">
+                                    <li>Porting and adapting gameplay features for 3D (shaders/graphics, gameplay logic and interaction).</li>
+                                    <li>Working with the Code Lead to adapt and maintain the Unity project for targeting mobile and PC. </li>
+                                    <li>UI systems and features, adapting and porting mobile UI to fit the feel of a PC game.</li>
+                                    <li>Steamworks platform integration (Steam cloud, leaderboards, achievements).</li>
+                                </div>
+                                <p>&nbsp</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal Plague Inc.-->
+    <div class="portfolio-modal modal fade" id="portfolioModalPlagueInc" tabindex="-1" aria-labelledby="portfolioModalPlagueInc" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Plague Inc.</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="assets/plague-one.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/plague-two.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/plague-three.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Plague Inc. is a strategy simulation game about evolving a deadly, global Plague whilst adapting against everything humanity can do to defend itself against it. I worked as a Programmer on this project, contributing updates on iOS.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>Objective-C, C++</p>
+                                <p class="fw-bold">Key roles and responsibilities:</p>
+                                <div class="container">
+                                    <li>Implemented UI update and overhaul adding support for iOS 11.0.1 (notched screens).</li>
+                                    <li>Bug fixes for various game behaviours and UI.</li>
+                                    <li>Adding logic/support for new Scenario Creator features.</li>
+                                </div>
+                                <p>&nbsp</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal Rebel Inc.-->
+    <div class="portfolio-modal modal fade" id="portfolioModalRebelInc" tabindex="-1" aria-labelledby="portfolioModalRebelInc" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Rebel Inc.</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselRebelIncControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="assets/rebel-one.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/rebel-two.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/rebel-three.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRebelIncControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRebelIncControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Rebel Inc. is a political/military simulation strategy game. The game is fully released and available via Google Play and iOS App Store. I was a programmer on this project, working on it from its inception up to release and post launch content.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>Unity, C#, Python, HLSL, Java, Objective-C</p>
+                                <p class="fw-bold">Key roles and responsibilities:</p>
+                                <div class="container">
+                                    <li>Implementation of gameplay behaviours and algorithms.</li>
+                                    <li>UI systems and functionality, supporting mobile devices of various sizes.</li>
+                                    <li>Native code for iOS and Android features.</li>
+                                    <li>Bespoke graphing UI system to communicate various aspects of the game's simulation to the player.</li>
+                                    <li>Profiling, debugging and optimisation of game code and assets.</li>
+                                    <li>Writing bespoke pipeline tools to aid game design and development.</li>
+                                    <li>Integrating platform APIs (Google Play and Game Centre)</li>
+                                </div>
+                                <p>&nbsp</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal SCM.-->
+    <div class="portfolio-modal modal fade" id="portfolioSCM" tabindex="-1" aria-labelledby="portfolioSCM" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Scenario Creator Mobile</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselSCMControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="assets/scm-one.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/scm-two.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="assets/scm-three.PNG" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSCMControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSCMControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Scenario Creator Mobile is the official scenario creator for Plague Inc. It enables players to create and publish their own deadly Plague Inc. scenarios. I took over this project after it was released developing updates for both Android and iOS, addressing bug fixes and adding new features and content.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>Unity, C#</p>
+                                <p class="fw-bold">Key roles and responsibilities:</p>
+                                <div class="container">
+                                    <li>Implementing new features including support for cloud saves.</li>
+                                    <li>Bug fixes</li>
+                                    <li>Long term support (Google Play and App store)</li>
+                                </div>
+                                <p>&nbsp</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal volume renderer.-->
+    <div class="portfolio-modal modal fade" id="portfolioModalVolumeRenderer" tabindex="-1" aria-labelledby="portfolioModalVolumeRenderer" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Volume Renderer</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="iframe-container">
+                                    <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/QncP7LoWEfI"></iframe>
+                                </div>  
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4"></p>Source Code can be found on my GitHub <a href="https://github.com/DanWestonCode/volume-renderer">here</a></p>
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">Volume Renderer implemented with C++/DirectX 11. This renders scalar data without the use of fitting proper geometry to the data. The technique works by rendering a cube. The front and back faces of the cube are rendered to separate Render Textures. A Pixel shader is then used to iterate through the scalar data, casting a ray from the front render texture to the back. The scalar data is sampled at equal intervals along the way. Each sample accumulates a result which is rendered onto the cube.</p>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>C++, HLSL, DirectX 11</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal flow map.-->
+    <div class="portfolio-modal modal fade" id="portfolioModalFlowMap" tabindex="-1" aria-labelledby="portfolioModalFlowMap" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Flow Maps</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div id="stage-flow" class="d-flex justify-content-center">
+                                    <!-- Portfolio Modal - Image-->
+                                    <script src="flowmaps/js/app.js"></script>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4"></p>Source Code can be found on my GitHub <a href="https://github.com/DanWestonCode/flow-map">here</a></p>
+                                <p class="fw-bold">About:</p>
+                                <p class="mb-4">This tech demo illustrates the use of Flow Maps within a shader to mimic directional water flow. The demo
+                                    is written in TypeScript and rendered in WebGL using Pixi. This technique uses a hand painted normal map
+                                    to depict directional vectors. Normals are unrolled and integrated with a timestep to move them in their
+                                    painted direction. The outcome of the integrated normal is used to sample the water texture and give the
+                                    illusion of flow.
+                                    <br><br>As well as water flow, this technique can be used for multiple effects including lava, weather patterns
+                                    and traffic!              
+                                    <br><br>I mainly wrote this demo to familiarise myself writing, loading and working with shaders using Pixi and
+                                    WebGL. The implementation is based off of <a href="http://graphicsrunner.blogspot.com/2010/08/water-using-flow-maps.html">Kyle Haywards article.</a>
+                                <p class="fw-bold">Technologies:</p>
+                                <p>TypeScript, WebGL, GLSL</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

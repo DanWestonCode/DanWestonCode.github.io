@@ -1,0 +1,69 @@
+// 
+// Styles
+// 
+
+// Import custom variables and override default Bootstrap variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import custom styles
+@import "./global.scss";
+
+// Components
+@import "./components/divider.scss";
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+@import "./components/forms.scss";
+
+// Sections
+@import "./sections/masthead.scss";
+@import "./sections/portfolio.scss";
+@import "./sections/footer.scss";
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+  
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Socials Footer */
+#menu-standard {
+    float: right; }
+  
+  #social-li {
+    padding-right: 0.117em;
+    padding-left: 0.117em;
+    margin-left: 10px;
+    float: left;
+    list-style-type: none;
+    /* removes bullet point */
+    border-radius: 7px;
+    /*rounded border*/
+    color: white;
+    /* White text */
+    font-size: 32px;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */ }
+  
+  #social-li:hover {
+    background-color: $primary; }
+  
+  #social-link {
+    width: 100%;
+    height: 100%; }
+  
